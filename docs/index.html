@@ -22,6 +22,11 @@
 
         <link rel="stylesheet" type="text/css" href="./style.css" />
         <link rel="icon" href="favicon.ico" />
+        <script>
+            screen.orientation.lock("landscape").catch(() => {
+                console.warn("Device doesn't support screen orientation lock");
+            });
+        </script>
     </head>
     <body>
         <div
